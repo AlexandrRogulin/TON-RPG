@@ -1,0 +1,66 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+				{"name":"basicStation","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "acceptAttack",
+			"inputs": [
+				{"name":"addres","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getProtection",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "Attack",
+			"inputs": [
+				{"name":"ad","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "health",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"health","type":"uint256"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+		{
+			"name": "killed",
+			"inputs": [
+				{"name":"isAlive","type":"bool"}
+			],
+			"outputs": [
+			]
+		}
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"health","type":"uint256"},
+		{"name":"addressBaseSt","type":"address"},
+		{"name":"healthFightUnit","type":"uint256"}
+	]
+}
